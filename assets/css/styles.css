@@ -14,6 +14,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    background: #fffaf5;
 }
 
 /* ================ Scroll ================ */
@@ -58,6 +59,15 @@ a {
     line-height: 1.875; /* 187.5% */
 }
 
+.section-heading {
+    margin: 15px 0 24px;
+    color: #000958;
+    font-family: "Sora", sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.19; /* 119.231% */
+}
+
 .btn {
     padding: 20px 40px;
     color: #ff5b2e;
@@ -75,7 +85,7 @@ a {
     top: -20px;
     position: sticky;
     z-index: 10;
-    background: #fff;
+    background: #fffaf5;
 }
 
 .navbar {
@@ -131,6 +141,7 @@ a {
 /* ================ Hero ================ */
 .hero {
     margin-top: 100px;
+    padding-bottom: 94px;
 }
 
 .hero__body {
@@ -291,7 +302,7 @@ a {
 .hero__title {
     width: 517px;
     color: #000958;
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 6.6rem;
     font-weight: 800;
     line-height: 1.15; /* 115.152% */
@@ -350,4 +361,164 @@ a {
     font-weight: 500;
     line-height: 1; /* 100% */
     text-decoration-line: underline;
+}
+
+/* ================ About ================ */
+.about {
+    margin-top: 77px;
+    padding: 53px 0;
+}
+
+.about__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__title {
+    margin-top: 77px;
+    color: #5e6085;
+    font-family: "Sora", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.about__heading {
+    width: 446px;
+}
+
+.about__desc {
+    width: 431px;
+}
+
+.form-group {
+    margin-top: 54px;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    gap: 36px;
+}
+.check-box {
+    margin-bottom: 34px;
+}
+
+.check-box-row:first-child {
+    margin-bottom: 34px;
+}
+
+.check-box label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #48496a;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+}
+
+.check-box label::before,
+.check-box label::after {
+    content: "";
+    display: inline-block;
+}
+
+.check-box label::before {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.check-box [type="checkbox"]:checked ~ label::before {
+    background: #ff5d31;
+    border-color: #ff5d31;
+}
+
+.check-box [type="checkbox"]:checked ~ label::after {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 10px;
+    height: 5px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    rotate: -45deg;
+}
+
+.about__media-content {
+    position: relative;
+}
+
+.about__media-bg {
+    z-index: -1;
+    position: absolute;
+    bottom: 3px;
+    display: flex;
+    width: 494px;
+    height: 336px;
+    border-radius: 16px;
+    background: rgb(252, 223, 238);
+    background: linear-gradient(
+        180deg,
+        rgba(252, 223, 238, 1) 0%,
+        rgba(250, 196, 210, 1) 100%
+    );
+}
+
+.about__media-img {
+    width: 450px;
+    height: 602px;
+    margin-left: 21px;
+    object-fit: cover;
+}
+
+.about__media-info {
+    left: -92px;
+    bottom: 238px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    width: 136px;
+    height: 156px;
+    border-radius: 10px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+}
+
+.about__media-title {
+    color: #fff;
+    text-align: center;
+    font-family: Sora;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1; /* 100% */
+}
+
+.about__media-desc {
+    width: 83px;
+    color: #c6f4f9;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+}
+
+.about__icon-dog {
+    position: absolute;
+    top: 169.81px;
+    left: -7.98px;
+    z-index: 1;
+}
+
+.about__icon-decor {
+    position: absolute;
+    top: 177px;
+    right: -85.63px;
+    z-index: -1;
 }
