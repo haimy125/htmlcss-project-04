@@ -912,3 +912,139 @@ a {
     background: #ff5b2e;
     color: #fff;
 }
+
+/* ================ The Best Choice ================ */
+.choice {
+    padding: 71px 0 86px;
+    background: #fff6ed;
+}
+
+.choice__heading {
+    text-align: center;
+}
+
+.choice__desc {
+    padding: 0 142px 38px;
+    text-align: center;
+}
+
+.choice__btn-center {
+    text-align: center;
+}
+
+.choice__btn {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border-radius: 31px;
+    border: 1px solid #ff5b2e;
+    margin-bottom: 56px;
+    text-align: center;
+}
+
+.choice__btn-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    color: #ff5b2e;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+}
+
+.choice__btn-link:hover {
+    border-radius: 31px;
+    background: #ff5b2e;
+    color: #fff;
+}
+
+.choice__img-icon {
+    position: absolute;
+    right: -113px;
+    bottom: 29.02px;
+}
+
+.choice__card-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+}
+
+.choice__card-item {
+    padding: 30px 28px 43px;
+    width: 302px;
+    height: 465px;
+    border-radius: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.choice__level {
+    color: #ff5b2e;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.choice__title {
+    margin: 8px 0 24px;
+    color: #3f4065;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.choice__price {
+    color: #000958;
+    font-family: Sora;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 22px;
+}
+
+.choice__list-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.choice__card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 246px;
+    height: 44px;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    margin-bottom: 24px;
+    transition: 0.25s;
+}
+
+.choice__card-btn:hover {
+    color: #fff;
+    background: #ff5b2e;
+}
+
+.choice__item-desc:not(.choice__item-desc:last-child) {
+    margin-bottom: 18px;
+}
+
+.choice__item-title {
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+    margin-left: 12px;
+}
+
+.choice__item-img {
+    color: #ff5b2e;
+}
