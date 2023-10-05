@@ -522,3 +522,148 @@ a {
     right: -85.63px;
     z-index: -1;
 }
+
+/* ================ Vacation ================ */
+.vacation {
+    margin-top: 77px;
+    padding: 16px 0 55px;
+}
+
+.vacation__body {
+    display: flex;
+    justify-content: flex-start;
+    gap: 127px;
+}
+
+.vacation__media {
+    position: relative;
+}
+
+.vacation__circle {
+    position: absolute;
+    right: -42px;
+    bottom: -54.58px;
+}
+
+.vacation__triangle1 {
+    position: absolute;
+    top: 268px;
+    right: -35px;
+}
+
+.vacation__triangle2 {
+    position: absolute;
+    bottom: 150px;
+    right: 19px;
+}
+
+.vacation__decor {
+    position: absolute;
+}
+
+.vacation__decor1 {
+    top: 12.5px;
+    right: 63.16px;
+}
+
+.vacation__decor2 {
+    top: -16px;
+    right: 13px;
+}
+
+.vacation__decor3 {
+    top: 33px;
+    right: -21px;
+}
+
+.vacation__heading {
+    margin-top: 52px;
+}
+
+.vacation__media-bg {
+    position: relative;
+    width: 458px;
+    height: 500px;
+    border-radius: 18px;
+    background: rgb(198, 226, 250);
+    background: linear-gradient(
+        180deg,
+        rgba(198, 226, 250, 1) 0%,
+        rgba(148, 194, 234, 1) 100%
+    );
+}
+
+.vacation__media-img {
+    position: absolute;
+    width: 458px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.vacation__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #ffeee7;
+    margin: 54px 0 36px;
+}
+
+.vacation__item {
+    display: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.vacation__link:hover .vacation__item::after {
+    position: absolute;
+    bottom: -1px;
+    content: "";
+    width: 95px;
+    height: 2px;
+    background: #ff5b2e;
+}
+
+.vacation__item-title {
+    color: #48496a;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.vacation__item-icon {
+    width: 20px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.vacation__desc {
+    width: 391px;
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71; /* 171.429% */
+    margin-bottom: 32px;
+}
+
+.vacation__link-more {
+    position: relative;
+    color: #ff5d31;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+}
+
+.vacation__link-more::after {
+    position: absolute;
+    content: "";
+    width: 86px;
+    height: 1.5px;
+    background: #ff5d31;
+    bottom: -5px;
+    left: 0;
+}
