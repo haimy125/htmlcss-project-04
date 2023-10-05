@@ -792,3 +792,123 @@ a {
 .service__more-icon {
     padding-left: 6px;
 }
+
+/* ================ Meet Our Groomers ================ */
+.meet {
+    padding: 130px 0;
+}
+
+.meet__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 37px;
+}
+
+.meet__item {
+    position: relative;
+}
+
+.meet__desc {
+    margin: 29px 0 14px;
+    color: #656689;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.meet__heading {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 59px;
+}
+
+.meet__media-img {
+    position: absolute;
+    width: 234px;
+    height: 299px;
+    object-fit: cover;
+    top: -23px;
+}
+
+.meet__media-body {
+    position: relative;
+    overflow: hidden;
+    width: 234px;
+    height: 299px;
+    border-radius: 129.5px;
+}
+
+.meet__media-bg {
+    position: absolute;
+    top: 33px;
+    width: 234px;
+    height: 266px;
+    margin-bottom: -24px;
+    border-radius: 129.5px;
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.meet__item:nth-child(2) .meet__media-bg {
+    border-radius: 129.5px;
+    background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+
+.meet__item:nth-child(3) .meet__media-bg {
+    border-radius: 129.5px;
+    background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+
+.meet__item:nth-child(4) .meet__media-bg {
+    border-radius: 129.5px;
+    background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+.meet__media-icon {
+    position: absolute;
+}
+
+.meet__media-icon1 {
+    bottom: 64px;
+    left: -16px;
+    top: 190px;
+}
+
+.meet__media-icon2 {
+    top: 33px;
+    left: -16px;
+    bottom: 157px;
+}
+
+.meet__media-icon3 {
+    bottom: 64px;
+    left: -16px;
+    top: 190px;
+}
+
+.meet__media-icon4 {
+    top: 33px;
+    left: -16px;
+    bottom: 157px;
+}
+
+.meet__title {
+    text-align: center;
+}
+
+.meet__action {
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meet__btn {
+    transition: 0.25s;
+}
+
+.meet__btn:hover {
+    background: #ff5b2e;
+    color: #fff;
+}
