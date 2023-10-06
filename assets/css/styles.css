@@ -47,6 +47,13 @@ a {
     text-decoration: none;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -1156,7 +1163,7 @@ label.btn-color-mode-switch-inner {
 
 /* ================ Our Reviews ================ */
 .our-reviews {
-    padding: 53px 0 130px;
+    padding: 53px 0 230px;
 }
 
 .our__body {
@@ -1320,4 +1327,111 @@ label.btn-color-mode-switch-inner {
     height: 8px;
     border-radius: 4px;
     background: #ff5b2e;
+}
+
+/* ================ Our Blog ================ */
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__heading {
+    margin-top: 0;
+}
+
+.blog__block-right {
+    margin-right: 73px;
+}
+
+.blog__desc {
+    color: #656689;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.875; /* 187.5% */
+    width: 350px;
+}
+
+.blog__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 24px;
+}
+
+.blog__item-img-size {
+    overflow: hidden;
+}
+
+.blog__item-img-size,
+.blog__item-img {
+    margin-top: 2px;
+    width: 322px;
+    height: 296px;
+    object-fit: cover;
+    transition: 0.25s;
+}
+
+.blog__item-img:hover {
+    scale: 1.2;
+}
+
+.blog__content {
+    margin-top: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.blog__item {
+    width: 358px;
+}
+
+.blog__item-bg {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0 0 36px;
+    width: 358px;
+    height: 362px;
+    border-radius: 24px 24px 0 24px;
+    background: #90ccff;
+    overflow: hidden;
+}
+
+.blog__item:nth-child(2) .blog__item-bg {
+    background: #ff997e;
+}
+
+.blog__item:nth-child(3) .blog__item-bg {
+    background: #5bd6e2;
+}
+
+.blog__date {
+    color: #fff;
+    font-family: Sora;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.21; /* 121.429% */
+}
+
+.blog__item-heading {
+    margin: 28px 0 16px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.55; /* 154.545% */
+}
+
+.blog__item-desc {
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71; /* 171.429% */
+    height: 72px;
+    width: 351px;
 }
