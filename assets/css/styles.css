@@ -1128,6 +1128,7 @@ label.btn-color-mode-switch-inner {
 
 .btn-color-mode-switch > label.btn-color-mode-switch-inner:before {
     content: attr(data-on);
+    cursor: pointer;
     position: absolute;
     font-size: 1.6rem;
     font-weight: 500;
@@ -1136,6 +1137,7 @@ label.btn-color-mode-switch-inner {
 
 .btn-color-mode-switch > label.btn-color-mode-switch-inner:after {
     content: attr(data-off);
+    cursor: pointer;
     padding: 20px 40px;
     background: #ff5b2e;
     color: #fff;
