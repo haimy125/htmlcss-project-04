@@ -452,12 +452,28 @@ a {
     border-radius: 4px;
 }
 
-.check-box [type="checkbox"]:checked ~ label::before {
+/* .check-box [type="checkbox"]:checked ~ label::before {
     background: #ff5d31;
     border-color: #ff5d31;
 }
 
 .check-box [type="checkbox"]:checked ~ label::after {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 10px;
+    height: 5px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    rotate: -45deg;
+} */
+
+.check-box [type="checkbox"] ~ label::before {
+    background: #ff5d31;
+    border-color: #ff5d31;
+}
+
+.check-box [type="checkbox"] ~ label::after {
     position: absolute;
     top: 9px;
     left: 8px;
@@ -655,6 +671,16 @@ a {
     line-height: 1; /* 100% */
 }
 
+.vacation__active::after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: "";
+    width: 95px;
+    height: 2px;
+    background: #ff5b2e;
+}
+
 .vacation__item-icon {
     width: 20px;
     height: 18px;
@@ -777,6 +803,7 @@ a {
     background: linear-gradient(90deg, #ff5b2e 0.39%, #ffa187 100.29%);
 }
 
+.service__title-link,
 .service__item-title {
     display: flex;
     gap: 12px;
@@ -1090,7 +1117,6 @@ label.btn-color-mode-switch-inner {
     margin: 0px;
     width: 276px;
     height: 56px;
-    /* background: #e0e0e0; */
     background: #fff6ed;
     border: 1px solid #ff5b2e;
     border-radius: 31px;
@@ -1115,7 +1141,7 @@ label.btn-color-mode-switch-inner {
     color: #fff;
     border-radius: 31px;
     position: absolute;
-    left: 0;
+    left: -1px;
     top: 0;
     text-align: center;
     transition: all 0.3s ease;
@@ -1503,6 +1529,22 @@ label.btn-color-mode-switch-inner {
     height: 37.175px;
 }
 
+input {
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input:focus {
+    outline: none;
+    border: specify yours;
+}
+
 .footer__form {
     position: relative;
     display: flex;
@@ -1512,6 +1554,19 @@ label.btn-color-mode-switch-inner {
 .footer__logo-link {
     display: inline-block;
     margin-bottom: 35px;
+}
+
+.form-error {
+    position: absolute;
+    font-size: 1.3rem;
+    color: red;
+    visibility: hidden;
+    bottom: -22px;
+    left: 22px;
+}
+
+.footer__form:has(:invalid:not(:placeholder-shown)) .form-error {
+    visibility: visible;
 }
 
 .form__email {
@@ -1538,16 +1593,16 @@ label.btn-color-mode-switch-inner {
 
 .footer__submit {
     position: absolute;
-    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    right: 0;
     width: 45px;
     height: 46px;
     border-radius: 22.5px;
     background: #ff5b2e;
     box-shadow: 0px 15px 28px -7px rgba(255, 91, 46, 0.3);
-    rotate: 180deg;
+    cursor: pointer;
 }
 
 .footer__submit:hover {
@@ -1556,6 +1611,12 @@ label.btn-color-mode-switch-inner {
 }
 
 .footer__submit-icon {
+    cursor: pointer;
+    position: absolute;
+    rotate: 180deg;
+    /* z-index: 1; */
+    right: 11px;
+    top: 28%;
     color: white;
 }
 

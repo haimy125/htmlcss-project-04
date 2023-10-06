@@ -409,7 +409,9 @@
                                             alt=""
                                             class="vacation__item-icon"
                                         />
-                                        <h3 class="vacation__item-title">
+                                        <h3
+                                            class="vacation__item-title vacation__active"
+                                        >
                                             Pet Boarding
                                         </h3>
                                     </div>
@@ -467,12 +469,17 @@
                                 <!-- Item 1 -->
                                 <article class="service__item">
                                     <div class="service__item-title">
-                                        <div class="service__decor"></div>
-                                        <h3
-                                            class="section-title service__title"
+                                        <a
+                                            href="#!"
+                                            class="service__title-link"
                                         >
-                                            Puppy Sitting
-                                        </h3>
+                                            <div class="service__decor"></div>
+                                            <h3
+                                                class="section-title service__title"
+                                            >
+                                                Puppy Sitting
+                                            </h3>
+                                        </a>
                                     </div>
                                     <p class="section-desc-small">
                                         Helping your new pup to be a good boy or
@@ -491,12 +498,17 @@
                                 <!-- Item 2 -->
                                 <article class="service__item">
                                     <div class="service__item-title">
-                                        <div class="service__decor"></div>
-                                        <h3
-                                            class="section-title service__title"
+                                        <a
+                                            href="#!"
+                                            class="service__title-link"
                                         >
-                                            Dog Walking
-                                        </h3>
+                                            <div class="service__decor"></div>
+                                            <h3
+                                                class="section-title service__title"
+                                            >
+                                                Dog Walking
+                                            </h3>
+                                        </a>
                                     </div>
                                     <p class="section-desc-small">
                                         Choose from a 30, 45, or 60-minute visit
@@ -515,12 +527,17 @@
                                 <!-- Item 3 -->
                                 <article class="service__item">
                                     <div class="service__item-title">
-                                        <div class="service__decor"></div>
-                                        <h3
-                                            class="section-title service__title"
+                                        <a
+                                            href="#!"
+                                            class="service__title-link"
                                         >
-                                            Pet Sitting
-                                        </h3>
+                                            <div class="service__decor"></div>
+                                            <h3
+                                                class="section-title service__title"
+                                            >
+                                                Pet Sitting
+                                            </h3>
+                                        </a>
                                     </div>
                                     <p class="section-desc-small">
                                         While you’re away we can make sure your
@@ -558,12 +575,17 @@
                                 <!-- Item 1 -->
                                 <article class="service__item">
                                     <div class="service__item-title">
-                                        <div class="service__decor"></div>
-                                        <h3
-                                            class="section-title service__title"
+                                        <a
+                                            href="#!"
+                                            class="service__title-link"
                                         >
-                                            Overnight Care
-                                        </h3>
+                                            <div class="service__decor"></div>
+                                            <h3
+                                                class="section-title service__title"
+                                            >
+                                                Overnight Care
+                                            </h3>
+                                        </a>
                                     </div>
                                     <p class="section-desc-small">
                                         If you’re away for the night, we can
@@ -582,12 +604,17 @@
                                 <!-- Item 2 -->
                                 <article class="service__item">
                                     <div class="service__item-title">
-                                        <div class="service__decor"></div>
-                                        <h3
-                                            class="section-title service__title"
+                                        <a
+                                            href="#!"
+                                            class="service__title-link"
                                         >
-                                            Pet Taxi
-                                        </h3>
+                                            <div class="service__decor"></div>
+                                            <h3
+                                                class="section-title service__title"
+                                            >
+                                                Pet Taxi
+                                            </h3>
+                                        </a>
                                     </div>
                                     <p class="section-desc-small">
                                         Does your pet need a lift to the
@@ -606,12 +633,17 @@
                                 <!-- Item 3 -->
                                 <article class="service__item">
                                     <div class="service__item-title">
-                                        <div class="service__decor"></div>
-                                        <h3
-                                            class="section-title service__title"
+                                        <a
+                                            href="#!"
+                                            class="service__title-link"
                                         >
-                                            Pet Medical Admin
-                                        </h3>
+                                            <div class="service__decor"></div>
+                                            <h3
+                                                class="section-title service__title"
+                                            >
+                                                Pet Medical Admin
+                                            </h3>
+                                        </a>
                                     </div>
                                     <p class="section-desc-small">
                                         Our team of experienced professionals
@@ -1418,40 +1450,33 @@
                                 class="footer__logo"
                             />
                         </a>
-                        <div class="footer__form">
+                        <form
+                            class="footer__form"
+                            method="post"
+                            action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                        >
                             <input
                                 type="email"
                                 class="form__email"
                                 name="email"
                                 id="email"
                                 placeholder="Enter your email"
+                                required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                             />
-                            <a href="#!" class="footer__submit">
-                                <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 20 20"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="footer__submit-icon"
-                                >
-                                    <path
-                                        d="M16.875 9.99854H3.125"
-                                        stroke="currentcolor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                    <path
-                                        d="M8.75 4.37354L3.125 9.99854L8.75 15.6235"
-                                        stroke="currentcolor"
-                                        stroke-width="1.5"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                    />
-                                </svg>
-                            </a>
-                        </div>
+                            <p class="form-error">Nhập đúng email</p>
+                            <input
+                                class="footer__submit"
+                                type="submit"
+                                value=""
+                                style="
+                                    background-image: url('./assets/icons/submit.png');
+                                    border: none;
+                                    background-repeat: no-repeat;
+                                    background-size: 100% 100%;
+                                "
+                            />
+                        </form>
                         <h3 class="footer__title">Follow Us</h3>
                         <div class="footer__social">
                             <!-- Facebook -->
