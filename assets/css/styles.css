@@ -1358,6 +1358,12 @@ label.btn-color-mode-switch-inner {
     align-items: center;
     justify-content: flex-start;
     margin-top: 24px;
+    transition: 0.25s;
+}
+
+.blog__btn:hover {
+    background: #ff5b2e;
+    color: #fff;
 }
 
 .blog__item-img-size {
