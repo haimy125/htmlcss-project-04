@@ -57,6 +57,7 @@ a {
 .container {
     width: 1170px;
     max-width: calc(100% - 48px);
+    /* width: min (1170px, 100%); đây là cách viết khác của 2 dòng phía trêm */
     margin: 0 auto;
 }
 .section-desc {
@@ -530,7 +531,7 @@ a {
 .about__media-title {
     color: #fff;
     text-align: center;
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 4.2rem;
     font-weight: 700;
     line-height: 1; /* 100% */
@@ -665,7 +666,7 @@ a {
 
 .vacation__item-title {
     color: #48496a;
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1; /* 100% */
@@ -726,7 +727,7 @@ a {
 .service__desc {
     color: #5e6085;
     text-align: center;
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1; /* 100% */
@@ -817,7 +818,7 @@ a {
     display: inline-flex;
     margin-top: 24px;
     color: #34396a;
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1; /* 100% */
@@ -1036,7 +1037,7 @@ a {
 .choice__title {
     margin: 8px 0 24px;
     color: #3f4065;
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1; /* 100% */
@@ -1044,7 +1045,7 @@ a {
 
 .choice__price {
     color: #000958;
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 3.4rem;
     font-weight: 700;
     line-height: 1;
@@ -1226,7 +1227,7 @@ label.btn-color-mode-switch-inner {
     position: relative;
     margin-top: 34px;
     color: #282828;
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1; /* 100% */
@@ -1475,7 +1476,7 @@ label.btn-color-mode-switch-inner {
 
 .blog__date {
     color: #fff;
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.21; /* 121.429% */
@@ -1484,7 +1485,7 @@ label.btn-color-mode-switch-inner {
 .blog__item-heading {
     margin: 28px 0 16px;
     color: #000958;
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 2.2rem;
     font-weight: 600;
     line-height: 1.55; /* 154.545% */
@@ -1624,7 +1625,7 @@ input:focus {
 
 .footer__title {
     color: #000958;
-    font-family: Sora;
+    font-family: "Sora", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.11; /* 111.111% */
